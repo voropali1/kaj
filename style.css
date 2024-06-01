@@ -1,0 +1,184 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+
+/* Import Google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  background: #E3F2FD;
+}
+
+.wrapper {
+  width: 600px; /* Новая ширина */
+  height: 668px; /* Новая высота */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  background: #293447;
+  -webkit-box-shadow: 0 20px 40px rgba(52, 87, 220, 0.2);
+          box-shadow: 0 20px 40px rgba(52, 87, 220, 0.2);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.game-details {
+  color: #B8C6DC;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 20px 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.play-board {
+  height: 100%;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  background: #212837;
+      grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+
+}
+.play-board .food {
+  background: #FF003D;
+}
+.play-board .head {
+  background: #60CBFF;
+}
+
+.controls {
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.controls i {
+  padding: 25px 0;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #B8C6DC;
+  width: calc(100% / 4);
+  cursor: pointer;
+  border-right: 1px solid #171B26;
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    width: 90vmin;
+    height: 115vmin;
+  }
+  .game-details {
+    font-size: 1rem;
+    padding: 15px 27px;
+  }
+  .controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .controls i {
+    padding: 15px 0;
+    font-size: 1rem;
+  }
+}
+#result-page {
+  text-align: center;
+  margin-top: 8vh;
+}
+
+#result-page h2 {
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+#result-page button {
+  padding: 15px 30px;
+  /*Размерыкнопки*/font-size: 1.2em;
+  /*Размершрифтакнопки*/background-color: #004b1d;
+  /*Цветфонакнопки*/color: white;
+  /*Цветтекстанакнопке*/border: none;
+  /*Убираемграницукнопки*/border-radius: 5px;
+  /*Закругляемуглыкнопки*/cursor: pointer;
+  /*Изменяемкурсорпринаведении*/transition: background-color 1s ease;
+  -webkit-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  -ms-transition: background-color 1s ease;
+  -o-transition: background-color 1s ease;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#result-page button:hover {
+  background-color: #45a049;
+}
+
+
+#home-page {
+  text-align: center;
+  margin-top: 8vh; /* Расположение от верхнего края экрана */
+}
+
+#home-page h1 {
+  font-size: 2.5em; /* Размер шрифта заголовка */
+  margin-bottom: 25px; /* Отступ снизу заголовка */
+}
+
+#home-page p {
+  font-size: 1.2em; /* Размер шрифта текста */
+  margin-bottom: 30px; /* Отступ снизу текста */
+  margin-right: 30px;
+}
+
+#home-page button {
+  padding: 15px 30px;
+  /*Размерыкнопки*/font-size: 1.2em;
+  /*Размершрифтакнопки*/background-color: #004b1d;
+  /*Цветфонакнопки*/color: white;
+  /*Цветтекстанакнопке*/border: none;
+  /*Убираемграницукнопки*/border-radius: 5px;
+  /*Закругляемуглыкнопки*/cursor: pointer;
+  /*Изменяемкурсорпринаведении*/transition: background-color 1s ease;
+  -webkit-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  -ms-transition: background-color 1s ease;
+  -o-transition: background-color 1s ease;
+}
+
+#home-page button:hover {
+  background-color: #45a049; /* Изменяем цвет фона при наведении */
+}

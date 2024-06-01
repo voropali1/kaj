@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  </head>
+  <body tabindex="0">
+    <section id="home-page" class="page">
+      <article>
+      <h1>Vítejte v hře Had!</h1>
+      <p>Nakrmte hada a sledujte jeho růst. Ovládání hada pomocí kláves s šipkami.</p>
+
+      <form id="player-form">
+        <label for="player-name">Zadejte své jméno:</label>
+        <input type="text" id="player-name" name="player-name" placeholder="Vložte své jméno" autofocus>
+        <button id="start-button">Spustit hru</button>
+      <audio id="button-zvuk" src="zvuk.mp3"></audio>
+      </form>
+
+    </article>
+    </section>
+    <section id="game-page" class="page" style="display: none;">
+      <h1 id="user-greeting">Good luck,</h1>
+      <div class="wrapper"style="width: 600px; height: 668px;">
+          <div class="game-details">
+              <span class="score">Score: 0</span>
+              <span class="high-score">High Score: 0</span>
+          </div>
+          <!-- SVG элемент для игрового поля -->
+          <svg class="play-board" width="600" height="600"></svg>
+          <div class="controls">
+              <i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long"></i>
+              <i data-key="ArrowUp" class="fa-solid fa-arrow-up-long"></i>
+              <i data-key="ArrowRight" class="fa-solid fa-arrow-right-long"></i>
+              <i data-key="ArrowDown" class="fa-solid fa-arrow-down-long"></i>
+          </div>
+      </div>
+  </section>
+  
+
+  <section id="result-page" class="page" style="display: none;">
+    <h2>Vaše skóre: <span id="final-score"></span></h2>
+  
+    <button id="restart-button">Restartovat hru</button>
+  </section>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
